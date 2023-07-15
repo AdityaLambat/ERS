@@ -5,6 +5,12 @@ A full stack, app used for reviewing employee.
 ### Hosted Link 
 https://empservice.onrender.com/
 
+### Admin Login Credentials
+````
+  Email     | aditya.lambat@gmail.com
+  Password  | 1301
+````
+
 ### Description
 The Employee Review System is a web application that enables employees to review and provide feedback on their colleagues' performance within an organization. The system includes an admin panel that allows the administrator to manage employee records, including adding new employees, updating their information, and deleting employee profiles.
 Only admin can make employee a admin. There is only login for both employee admin if a user is admin he will be reidrcted to admin dashboard otheriwse he will redirected to employee dashboard.
