@@ -1,9 +1,9 @@
 <% if(locals.user) {%>
   <div class="container-fluid">
     <div class="row">
-      <!-- Assigned reviews -->
+      <!-- Assigned Reviews -->
       <div class="col-md-12 col-lg-7 my-2">
-        <h1 class="text-center">Assigned reviews</h1>
+        <h3 class="text-center">Assigned Reviews</h3>
         <div class="d-flex justify-content-center align-items-center">
           <div class="d-flex flex-wrap justify-content-center justify-content-lg-start ms-lg-4" style="width: 100%">
             <% for(review of assignedReviews) {%>
@@ -30,7 +30,7 @@
 
       <!-- Feedbacks given by others -->
       <div class="col-12 col-lg-5 my-2">
-        <h1 class="text-center">Feedbacks by others</h1>
+        <h3 class="text-center">Feedbacks</h3>
 
         <div class="d-flex flex-column justify-content-center align-items-center">
           <% for (review of reviewsFromOthers) {%>
