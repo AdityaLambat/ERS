@@ -1,0 +1,81 @@
+<style>
+  #login {
+    color: white;
+    background-color: #2B9BFF;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #login:hover {
+    color: white;
+    background-color: var(--dark);
+  }
+
+  #form-style {
+    /* display: none; */
+    margin: auto;
+    margin-top: 5%;
+    background-color: white;
+    padding: 20px 30px 40px 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+
+  #form-style input {
+    border: 1px solid black;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
+
+</style>
+
+<nav class="navbar navbar-expand-md nav-light bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand me-lg-5" href="/">
+
+      <img src="https://cdn-icons-png.flaticon.com/128/9166/9166875.png" alt="Logo" width="35" height="35"
+        class="d-inline-block align-text-top" />
+      <span class="text-center fw-semibold text-white">Employee Review System</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <% if(locals.user) {%>
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+          <% if(locals.user.role==='Admin' ) {%>
+            <div class="text-light rounded-pill fw-semibold">
+              <i class="fa-solid fa-plus"></i>
+              <a style="color: white; text-decoration: none;" href="/add-employee">Add Employee</a>
+            </div>
+            <%} %>
+        </ul>
+
+
+        <div class="text-white rounded-pill fw-semibold">
+          <i class="fa-solid fa-user"></i>
+          <%= user.fullname %>
+        </div>
+        <a class="btn btn-danger mx-2 rounded-pill fw-semibold" href="/sign-out">
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          Sign Out</a>
+
+    </div>
+    <%} %>
+  </div>
+</nav>
