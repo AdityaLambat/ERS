@@ -30,35 +30,35 @@ Node, Express, Mongodb, EJS, JavaScript, Html, Css, Bootstrap, Fontawesome
 ERS
   ->|
     |              
-    |--->config--->|--->database.js
-    |              |--->middleware.js
-    |              |--->passport-local-Strategy.js
+    |---> config --->|---> database.js
+    |                |---> middleware.js
+    |                |---> passport-local-Strategy.js
     |                  
-    |--->controllers--->|--->dashboard_controller.js
-    |                   |--->review_controller.js
-    |                   |--->users_controller.js
+    |---> controllers --->|---> dashboard_controller.js
+    |                     |---> review_controller.js
+    |                     |---> users_controller.js
     |
-    |--->models--->|--->review.js
-    |              |--->user.js
+    |---> models --->|---> review.js
+    |                |---> user.js
     |
-    |-->node_modules
+    |--> node_modules
     |
-    |--->routes--->|--->index.js
-    |              |--->review.js
-    |              |--->user.js
+    |---> routes --->|---> index.js
+    |                |---> review.js
+    |                |---> user.js
     |
-    |--->views---> |--->_header.ejs
-    |              |--->add_employee.ejs
-    |              |--->admin_dashboard.ejs
-    |              |--->employee_dashboard.ejs
-    |              |--->layout.ejs
-    |              |--->update_employee.ejs
-    |              |--->user_sign_in.ejs
-    |              |--->user_sign_up.ejs
+    |---> views --->|---> _header.ejs
+    |               |---> add_employee.ejs
+    |               |---> admin_dashboard.ejs
+    |               |---> employee_dashboard.ejs
+    |               |---> layout.ejs
+    |               |---> update_employee.ejs
+    |               |---> user_sign_in.ejs
+    |               |---> user_sign_up.ejs
     |
-    |--->.gitignore
+    |---> README.md
     |---> index.js
     |---> package-lock.json
-    |--->package.json
+    |---> package.json
  
     ````
