@@ -1,9 +1,10 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb+srv://MongoDBCluster:MongoDBCluster@cluster0.sxgacl0.mongodb.net/ERS",{
+mongoose.connect("mongodb+srv://MongoDBCluster:MongoDBCluster@mongodbcluster1301.mzjex1w.mongodb.net/ERS",{
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
+
 
 
 
